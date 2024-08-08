@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [5.0.1] - 2024-08-08
+
 - Updated to version 2 of IntelliJ platform template
 - Support for 2024.2 versions
 
@@ -142,26 +144,27 @@
 
 - First version, adopted code from [old shell-process plugin](https://code.google.com/archive/p/shell-process/)
 
-[Unreleased]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.0...HEAD
-[5.0.0]: https://github.com/dploeger/idea-shellfilter/compare/0c47cdac24c84b3aec9aa8a986e2bef29e4e67e4...v5.0.0
-[4.7.0]: https://github.com/dploeger/idea.shellfilter/compare/v4.6.2...v4.7.0
-[4.6.2]: https://github.com/dploeger/idea.shellfilter/compare/v4.6.1...v4.6.2
-[4.6.1]: https://github.com/dploeger/idea.shellfilter/compare/v4.6.0...v4.6.1
-[4.6.0]: https://github.com/dploeger/idea.shellfilter/compare/v4.5.0...v4.6.0
-[4.5.0]: https://github.com/dploeger/idea.shellfilter/compare/v4.4.0...v4.5.0
-[4.4.0]: https://github.com/dploeger/idea.shellfilter/compare/v4.3.0...v4.4.0
-[4.3.0]: https://github.com/dploeger/idea.shellfilter/compare/v4.2.0...v4.3.0
-[4.2.0]: https://github.com/dploeger/idea.shellfilter/compare/v4.1.0...v4.2.0
-[4.1.0]: https://github.com/dploeger/idea.shellfilter/compare/v4.0.0...v4.1.0
-[4.0.0]: https://github.com/dploeger/idea.shellfilter/compare/v3.0.3...v4.0.0
-[3.0.3]: https://github.com/dploeger/idea.shellfilter/compare/v3.0.2...v3.0.3
-[3.0.2]: https://github.com/dploeger/idea.shellfilter/compare/v3.0.1...v3.0.2
-[3.0.1]: https://github.com/dploeger/idea.shellfilter/compare/v3.0.0...v3.0.1
-[3.0.0]: https://github.com/dploeger/idea.shellfilter/compare/v2.1.0...v3.0.0
-[2.1.0]: https://github.com/dploeger/idea.shellfilter/compare/v2.0.0...v2.1.0
-[2.0.0]: https://github.com/dploeger/idea.shellfilter/compare/v1.0.1...v2.0.0
-[1.0.1]: https://github.com/dploeger/idea.shellfilter/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/dploeger/idea.shellfilter/compare/v1.0.0-beta.3...v1.0.0
-[1.0.0-beta.1]: https://github.com/dploeger/idea.shellfilter/commits/v1.0.0-beta.1
-[1.0.0-beta.2]: https://github.com/dploeger/idea.shellfilter/compare/v1.0.0-beta.1...v1.0.0-beta.2
-[1.0.0-beta.3]: https://github.com/dploeger/idea.shellfilter/compare/v1.0.0-beta.2...v1.0.0-beta.3
+[Unreleased]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.1...HEAD
+[5.0.1]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.0...v5.0.1
+[5.0.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.7.0...v5.0.0
+[4.7.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.6.2...v4.7.0
+[4.6.2]: https://github.com/dploeger/idea-shellfilter/compare/v4.6.1...v4.6.2
+[4.6.1]: https://github.com/dploeger/idea-shellfilter/compare/v4.6.0...v4.6.1
+[4.6.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.5.0...v4.6.0
+[4.5.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.4.0...v4.5.0
+[4.4.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.3.0...v4.4.0
+[4.3.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.2.0...v4.3.0
+[4.2.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.1.0...v4.2.0
+[4.1.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.0.0...v4.1.0
+[4.0.0]: https://github.com/dploeger/idea-shellfilter/compare/v3.0.3...v4.0.0
+[3.0.3]: https://github.com/dploeger/idea-shellfilter/compare/v3.0.2...v3.0.3
+[3.0.2]: https://github.com/dploeger/idea-shellfilter/compare/v3.0.1...v3.0.2
+[3.0.1]: https://github.com/dploeger/idea-shellfilter/compare/v3.0.0...v3.0.1
+[3.0.0]: https://github.com/dploeger/idea-shellfilter/compare/v2.1.0...v3.0.0
+[2.1.0]: https://github.com/dploeger/idea-shellfilter/compare/v2.0.0...v2.1.0
+[2.0.0]: https://github.com/dploeger/idea-shellfilter/compare/v1.0.1...v2.0.0
+[1.0.1]: https://github.com/dploeger/idea-shellfilter/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/dploeger/idea-shellfilter/compare/v1.0.0-beta.3...v1.0.0
+[1.0.0-beta.3]: https://github.com/dploeger/idea-shellfilter/compare/v1.0.0-beta.2...v1.0.0-beta.3
+[1.0.0-beta.2]: https://github.com/dploeger/idea-shellfilter/compare/v1.0.0-beta.1...v1.0.0-beta.2
+[1.0.0-beta.1]: https://github.com/dploeger/idea-shellfilter/commits/v1.0.0-beta.1
