@@ -17,6 +17,8 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      - name: Cleanup
+        run: rm -rf /opt/hostedtoolcache/*
 
       # Check out the current repository
       - name: Fetch Sources
