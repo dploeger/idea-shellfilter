@@ -18,10 +18,11 @@ import java.io.*;
 import java.util.*;
 
 public class FilterAction extends AnAction {
-
     @NonNls
     private static final String CUSTOM_ID = "_custom";
+
     private final Logger LOG = Logger.getInstance(FilterAction.class);
+
     @NonNls
     private final ResourceBundle resourceBundle =
         ResourceBundle.getBundle("messages.shellfilter");
@@ -308,12 +309,13 @@ public class FilterAction extends AnAction {
         LOG.debug("Building up command");
 
         final String shellCommand = Settings.getInstance().getShellCommand();
-        final String cmd;
+        final List<String> cmd = new ArrayList<>();
 
         if (shellCommand.contains("%s")) { //NON-NLS
-            cmd = String.format(shellCommand, commandFile.getPath());
+            cmd.addAll(Arrays.asList(String.format(shellCommand, commandFile.getPath()).split(" ")));
         } else {
-            cmd = shellCommand + " " + commandFile.getPath();
+            cmd.add(shellCommand);
+            cmd.add(commandFile.getPath());
         }
 
         LOG.debug("Running command ", shellCommand); //NON-NLS
@@ -325,7 +327,7 @@ public class FilterAction extends AnAction {
         final String output;
 
         try {
-            p = Runtime.getRuntime().exec(cmd);
+            p = Runtime.getRuntime().exec(cmd.toArray(new String[0]));
 
             pStdout = new DataInputStream(p.getInputStream());
             if (!filterContent.isEmpty()) {
@@ -359,7 +361,6 @@ public class FilterAction extends AnAction {
                 );
                 throw new ShellCommandNoOutputException(error);
             }
-
         } finally {
             if (!commandFile.delete()) {
                 LOG.warn(
@@ -372,6 +373,5 @@ public class FilterAction extends AnAction {
         }
 
         return output;
-
     }
 }
