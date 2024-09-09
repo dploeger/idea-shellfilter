@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Changed deprecated single string Process.Exec method to array
+
 ## [5.0.1] - 2024-08-08
 
 - Updated to version 2 of IntelliJ platform template
