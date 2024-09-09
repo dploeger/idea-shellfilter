@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [5.0.2] - 2024-09-09
+
 ### Fixed
 
 - Changed deprecated single string Process.Exec method to array
@@ -148,7 +150,8 @@
 
 - First version, adopted code from [old shell-process plugin](https://code.google.com/archive/p/shell-process/)
 
-[Unreleased]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.1...HEAD
+[Unreleased]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.2...HEAD
+[5.0.2]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.1...v5.0.2
 [5.0.1]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.7.0...v5.0.0
 [4.7.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.6.2...v4.7.0
