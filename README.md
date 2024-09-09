@@ -8,8 +8,10 @@ IntelliJ IDEA plugin to filter source code using a shell script.
 
 ## Introduction
 
+<!-- Plugin description -->
 This IntelliJ IDEA plugin allows running the currently selected text through an external shell script, enabling
 advanced functions like filtering text, encrypting or decrypting, etc.
+<!-- Plugin description end -->
 
 ## Installation
 
