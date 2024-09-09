@@ -1,51 +1,37 @@
-# idea-shellfilter
+# <img src="src/main/resources/icons/icon@2x.png"> Shellfilter
+
+IntelliJ IDEA plugin to filter source code using a shell script.
 
 ![Build](https://github.com/dploeger/idea-shellfilter/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/9958-shell-filter.svg)](https://plugins.jetbrains.com/plugin/9958-shell-filter)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/9958-shell-filter.svg)](https://plugins.jetbrains.com/plugin/9958-shell-filter)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties) and [pluginName](./gradle.properties), as well as the [id](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `MARKETPLACE_ID` in the above README badges. You can obtain it once the plugin is published to JetBrains Marketplace.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+## Introduction
 
-<!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
-
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
-
-To keep everything working, do not remove `<!-- ... -->` sections. 
-<!-- Plugin description end -->
+This IntelliJ IDEA plugin allows running the currently selected text through an external shell script, enabling
+advanced functions like filtering text, encrypting or decrypting, etc.
 
 ## Installation
 
-- Using the IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "idea-shellfilter"</kbd> >
-  <kbd>Install</kbd>
-  
-- Using JetBrains Marketplace:
+Install the plugin from the [Jetbrains Marketplace](https://plugins.jetbrains.com/plugin/9958-shell-filter).
 
-  Go to [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID) and install it by clicking the <kbd>Install to ...</kbd> button in case your IDE is running.
+## Configuration
 
-  You can also download the [latest release](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID/versions) from JetBrains Marketplace and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+In Settings/Tools/Shellfilter settings, a list of scripts can be configured that can be selected in the Shellfilter
+popup. 
 
-- Manually:
+Additionally, the default shell to run the scripts from can be configured. Use "%s" in the command line which will
+be replaced with the temporary file that holds your script content. If no "%s" is used, the name of the file will
+simply be added to the command line.
 
-  Download the [latest release](https://github.com/dploeger/idea-shellfilter/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+## Usage
 
+Select a text in the editor view, select the Shell Filter item from the Edit menu and select the script
+to run.
 
----
-Plugin based on the [IntelliJ Platform Plugin Template][template].
+In this pop up, a custom command can also be selected for adhoc-type of scripts.
 
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
-[docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
+After the command completes successfully, the selected text will be replaced with the script's output.
+
+Selecting text is optional, so you can also use Shell Filter to quickly run scripts and get their output (i.e. for
+generating passwords).
