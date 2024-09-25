@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- Support for 2024.3 versions
+
 ## [5.0.2] - 2024-09-09
 
 ### Fixed
