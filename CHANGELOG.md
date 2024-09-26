@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [5.0.3] - 2024-09-26
+
 ### Added
 
 - Support for 2024.3 versions
@@ -154,7 +156,8 @@
 
 - First version, adopted code from [old shell-process plugin](https://code.google.com/archive/p/shell-process/)
 
-[Unreleased]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.2...HEAD
+[Unreleased]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.3...HEAD
+[5.0.3]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.2...v5.0.3
 [5.0.2]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.1...v5.0.2
 [5.0.1]: https://github.com/dploeger/idea-shellfilter/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/dploeger/idea-shellfilter/compare/v4.7.0...v5.0.0
