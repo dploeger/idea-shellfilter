@@ -19,7 +19,12 @@ public class CustomFilterAction extends FilterAction {
         LOG.debug("Custom Shell Filter was invoked. Fetching data from event.");
 
         final Editor editor =
-                anActionEvent.getRequiredData(CommonDataKeys.EDITOR);
+                anActionEvent.getData(CommonDataKeys.EDITOR);
+
+        if (editor == null) {
+            LOG.error("Internal error. Editor not found");
+            return;
+        }
 
         LOG.debug("Custom command selected. Show input dialog");
 
