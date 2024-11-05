@@ -49,7 +49,12 @@ public class FilterAction extends AnAction {
         LOG.debug("Shell Filter was invoked. Fetching data from event.");
 
         final Editor editor =
-            anActionEvent.getRequiredData(CommonDataKeys.EDITOR);
+            anActionEvent.getData(CommonDataKeys.EDITOR);
+
+        if (editor == null) {
+            LOG.error("Internal error. Editor not found");
+            return;
+        }
 
         LOG.debug("Building up command list from settings and custom command");
 

@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed some 2024.3 deprecations
+- Updates to Qodana and Kotlin
+
 ## [5.0.3] - 2024-09-26
 
 ### Added
